@@ -19,7 +19,7 @@ function letterCombinations(input_digit) {
 		}
 		let currChar = input[currIndex];
 		for(let i=0; i<table[currChar].length; i++){
-			solve(currIndex+1, calculatedString + table[currChar]);
+			solve(currIndex+1, calculatedString + table[currChar][i]);
 		}
 	}
 	solve(0, "");
